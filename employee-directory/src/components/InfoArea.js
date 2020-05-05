@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import DataTable from "./DataTable";
+import InfoTable from "./InfoTable";
 import Nav from "./Nav";
 import API from "../utils/API";
-import "../styles/DataArea.css";
+import "../styles/InfoArea.css";
 
-export default class DataArea extends Component {
+export default class InfoArea extends Component {
   state = {
     users: [{}],
     order: "descend",
@@ -91,7 +91,7 @@ export default class DataArea extends Component {
       <>
         <Nav handleSearchChange={this.handleSearchChange} />
         <div className="data-area">
-          <DataTable
+          <InfoTable
             headings={this.headings}
             users={this.state.filteredUsers}
             handleSort={this.handleSort}

@@ -1,8 +1,8 @@
 import React from "react";
-import DataBody from "./DataBody";
-import "../styles/DataTable.css";
+import InfoBody from "./InfoBody";
+import "../styles/InfoTable.css";
 
-function DataTable({ headings, users, handleSort }) {
+function InfoTable({ headings, users, handleSort }) {
   return (
     <div className="datatable mt-5">
       <table
@@ -29,10 +29,10 @@ function DataTable({ headings, users, handleSort }) {
           </tr>
         </thead>
 
-        <DataBody users={users} />
+        <InfoBody users={users} />
       </table>
     </div>
   );
 }
 
-export default DataTable;
+export default InfoTable;
