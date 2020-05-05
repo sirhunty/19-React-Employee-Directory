@@ -8,6 +8,10 @@ function App() {
   return (
     <div className="App">
       <p>Blank react project</p>
+      <Wrapper>
+        <Header />
+        <Main />
+      </Wrapper>
     </div>
   );
 }
